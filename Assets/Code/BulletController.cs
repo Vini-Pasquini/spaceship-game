@@ -20,7 +20,7 @@ public class BulletController : MonoBehaviour
         {
             GameObject.Destroy(other.gameObject);
             GameObject.Destroy(this.gameObject);
-            // TODO: add score
+            GameManager.Instance.AddScore();
         }
     }
 }
