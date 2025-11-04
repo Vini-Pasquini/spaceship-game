@@ -186,3 +186,4 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::PlayerController
   _bulletPrefab: {fileID: 7750490754272793523, guid: 6be6a7184cf596042948d92c50e0516f, type: 3}
+  _skinData: {fileID: 11400000, guid: 9ab2ce285560c684ab688df728f0114d, type: 2}

@@ -5,10 +5,19 @@ public class PlayerController : MonoBehaviour
     const string _HORIZONTAL_INPUT_AXIS_ = "Horizontal";
 
     [SerializeField] private GameObject _bulletPrefab;
+    [SerializeField] private SkinData _skinData;
+
+    private SpriteRenderer _spriteRenderer;
 
     private float _movementSpeed = 7f;
     private float _shootDelay = 1f;
     private float _shootTimer = 0f;
+
+    private void Start()
+    {
+        this._spriteRenderer = this.GetComponentInChildren<SpriteRenderer>();
+        this._spriteRenderer.sprite = this._skinData.sprite;
+    }
 
     private void Update()
     {
